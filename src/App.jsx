@@ -185,7 +185,7 @@ const RESUME_DATA = {
       role: "Open Source Contributor",
       period: "Apr 2026 - May 2026",
       link:
-        "https://github.com/hushh-labs/hushh_Tech_website/issues?q=is%3Apr+author%3Arameshkumark24",
+        "https://github.com/hushh-labs/hushh-research/issues?q=state%3Aclosed%20is%3Apr%20author%3Arameshkumark24",
       achievements: [
         "Contributed improvements through collaborative GitHub pull requests and community-driven development workflows.",
         "Participated in open-source collaboration, version control, issue resolution, and peer-driven development.",
