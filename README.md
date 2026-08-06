@@ -1,61 +1,138 @@
-# Rameshkumar K – Portfolio 🚀
+# Rameshkumar K — Portfolio
 
-**Java Backend Developer | AI Enthusiast**
+Personal portfolio site built with **React, Vite and Tailwind CSS**. Single-page, fully responsive, with light/dark theming, scroll-spy navigation, and dynamic SEO meta tags.
 
-Computer Science undergraduate specializing in robust backend engineering with a strong foundation in Machine Learning. Passionate about building scalable REST APIs, managing databases, and empowering backend systems with intelligent AI integrations.
-
----
-
-## 🌟 Overview
-
-This is my personal portfolio website showcasing:
-
-- Backend engineering & AI/ML integration projects
-- REST APIs, secure system architectures, and cloud basics
-- 200+ solved Data Structures & Algorithms problems
-- Leadership in technical event coordination
-- Hackathon accomplishments (SIH, Hushh AI, Aptean AI, Flinders)
-
-🔗 **Live Demo:** https://rameshkumark.vercel.app/
+🔗 **Live:** https://rameshkumark.vercel.app
 
 ---
 
-## ✨ Key Highlights
+## 🧱 Tech Stack
 
-### 🚀 Backend Engineering & ML Integration
-- **Robust Backend Systems:** Building secure REST APIs with Spring Boot, Node.js, and Flask, backed by MySQL and MongoDB.
-- **AI/ML Pipelines:** Developed end-to-end Machine Learning systems, including a Food Delivery Time Predictor (90%+ accuracy) and an LSTM-based Indian Stock Market Forecaster.
-- **LLM Integrations:** Engineered "TrendScript", a serverless application combining real-time Google Trends data with Groq's LLaMA 3.1 for automated content generation.
+| Layer | Technology |
+|---|---|
+| Framework | React 18 |
+| Build tool | Vite |
+| Styling | Tailwind CSS, CSS custom properties |
+| Icons | lucide-react |
+| Fonts | Space Grotesk, Manrope, Satoshi |
+| Hosting | Vercel |
 
-### 🏆 Achievements & Leadership
-- **Hackathons:** Selected for SIH institution level, Finalist in Flinders AI Univ Comp, next-round pick for Hushh AI Hackathon, and shortlisted for Aptean AI Hackathon.
-- **Problem Solving:** 200+ problems solved across arrays, hashing, trees, dynamic programming, and graphs.
-- **Leadership:** Served as Public Relations Officer, leading coordination for departmental technical events, managing communication with faculty and 200+ participants, and effectively increasing overall engagement by 20%.
-
-### 🔐 Core Backend Skills
-- Spring Boot REST APIs, JWT Authentication, and BCrypt
-- Role-based access control (RBAC) and clean layered architecture
-- Relational (MySQL) and Non-Relational (MongoDB) databases
-- JPA & Hibernate Object-Relational Mapping
+> This is the stack of **this website**. For my engineering skills, see the [About](#-about-me) section below or the [live site](https://rameshkumark.vercel.app).
 
 ---
 
-## 🛠 Tech Stack
+## ✨ Features
 
-| Category   | Technologies |
-|------------|-------------|
-| **Languages** | Python, Java (OOP, DSA), SQL |
-| **AI/ML** | Scikit-learn, TensorFlow, LLM Integration, Generative AI (Fundamentals), Prompt Engineering |
-| **Backend** | Spring Boot, REST APIs, JPA, Hibernate, JWT Authentication, BCrypt, RBAC |
-| **Databases**| MySQL, MongoDB |
-| **Tools & Platforms**| Git, GitHub, Postman, IntelliJ IDEA, Google Cloud Platform (GCP) (Basics) |
+- **Light / dark theming** driven by CSS custom properties — no runtime theme library
+- **Scroll-spy navigation** that highlights the active section
+- **Dynamic SEO** — `title`, `description`, `keywords` and Open Graph tags set at runtime
+- **Custom cursor** with hover states (desktop only, gracefully hidden on touch)
+- **Single source of truth** — all content lives in one `RESUME_DATA` object
+- **Responsive timeline** for the experience section
+- **Fully responsive** with touch-optimised targets on mobile
+
+---
+
+## 📁 Project Structure
+
+```
+My-Portfolio/
+├── src/
+│   ├── App.jsx          # All sections + RESUME_DATA (single source of truth)
+│   ├── main.jsx         # React entry point
+│   └── index.css        # Tailwind directives
+├── public/
+├── index.html
+├── tailwind.config.js
+├── vite.config.js
+└── package.json
+```
 
 ---
 
 ## 🚀 Getting Started
 
-### 1️⃣ Clone the Repository
+### Prerequisites
+- Node.js 18 or later
+- npm
+
+### Installation
 
 ```bash
-git clone [https://github.com/rameshkumark24/rameshkumark.git](https://github.com/rameshkumark24/rameshkumark.git)
-cd rameshkumark
+git clone https://github.com/rameshkumark24/My-Portfolio.git
+cd My-Portfolio
+npm install
+```
+
+### Run locally
+
+```bash
+npm run dev
+```
+
+Open http://localhost:5173
+
+### Build for production
+
+```bash
+npm run build
+npm run preview
+```
+
+---
+
+## 🎨 Customisation
+
+All content is in a single `RESUME_DATA` object at the top of `src/App.jsx`. Edit it and everything updates — no other file needs touching.
+
+```js
+const RESUME_DATA = {
+  name: "...",
+  role: "...",
+  tagline: "...",
+  skills:      [ /* skill cards */ ],
+  projects:    [ /* project cards — supports `link`, `live`, `highlight` */ ],
+  experience:  [ /* timeline entries */ ],
+  achievements:[ /* ... */ ],
+  certifications: [ /* ... */ ]
+};
+```
+
+**Theming:** colours live as CSS variables under `.light-theme` and `.dark-theme` in the `<style>` block inside `App.jsx`.
+
+---
+
+## 🚢 Deployment
+
+Deployed on Vercel with the default Vite preset:
+
+- **Framework preset:** Vite
+- **Build command:** `npm run build`
+- **Output directory:** `dist`
+
+---
+
+## 👤 About Me
+
+Computer Science Engineering (AI & ML) undergraduate at KPR Institute of Engineering and Technology, focused on **backend and full-stack software engineering**.
+
+**Core stack:** Java · Spring Boot 3 · Spring Security · Spring Data JPA · Hibernate · React · TypeScript · MySQL · PostgreSQL · Docker
+
+**Selected work**
+- **[Placement Management System](https://github.com/rameshkumark24/placement_system)** — full-stack Java platform: Spring Boot 3 backend, React frontend, JWT with access + refresh tokens, role-based authorization, Swagger-documented APIs, Docker Compose, deployed to production · [Live](https://placement-system-five.vercel.app)
+- **[NexOps](https://github.com/rameshkumark24/abb-nexops)** — real-time Industrial IoT predictive maintenance platform (MQTT, WebSockets, ML anomaly detection) · **Top 6 of 1,600+ teams, ABB Accelerator 2026**
+- **[DSAPath](https://github.com/rameshkumark24/dsapath)** — DSA preparation and progress-tracking platform · [Live](https://dsapathvictory.vercel.app)
+
+**Also:** 200+ DSA problems solved in Java · Hushh Community Champion (open source) · Top 45 institutional teams, Smart India Hackathon 2025 · Finalist, Flinders University AI Competition · Public Relations Officer coordinating departmental technical events for 200+ participants
+
+---
+
+## 📬 Contact
+
+[Portfolio](https://rameshkumark.vercel.app) · [LinkedIn](https://www.linkedin.com/in/rameshkumark24/) · [GitHub](https://github.com/rameshkumark24) · [LeetCode](https://leetcode.com/u/Ramesh_Kumar_K/) · rameshkumaroff@gmail.com
+
+---
+
+## 📄 License
+
+MIT — feel free to fork and adapt. A link back is appreciated but not required.
