@@ -51,7 +51,7 @@ const RESUME_DATA = {
   skills: [
     {
       name: "Languages",
-      tech: "Java, SQL, JavaScript, TypeScript, Python",
+      tech: "Java, SQL, Python",
       icon: <Code size={24} />
     },
     {
