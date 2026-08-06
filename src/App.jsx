@@ -17,17 +17,18 @@ import {
   Trophy,
   FileText,
   Server,
-  Wrench
+  Wrench,
+  Monitor
 } from 'lucide-react';
 
 // --- DATA FROM RESUME ---
 const RESUME_DATA = {
   name: "Rameshkumar Kannan",
 
-  role: "Software Engineer | Python Backend",
+  role: "Software Development Engineer | Java & Spring Boot",
 
   tagline:
-    "Computer Science undergraduate focused on software and backend engineering with Python, FastAPI, REST APIs, and databases. I build practical software systems while strengthening Data Structures, Algorithms, and core computer science fundamentals using Java, with additional experience in AI/ML-driven applications.",
+    "Computer Science undergraduate building production-grade backend systems with Java, Spring Boot, and React. I design REST APIs with authentication, role-based access control, and containerised deployment, while strengthening Data Structures, Algorithms, and core computer science fundamentals in Java.",
 
   email: "rameshkumaroff@gmail.com",
 
@@ -50,33 +51,33 @@ const RESUME_DATA = {
   skills: [
     {
       name: "Languages",
-      tech: "Python, Java, SQL",
+      tech: "Java, SQL, JavaScript, TypeScript, Python",
       icon: <Code size={24} />
     },
     {
       name: "Backend Engineering",
-      tech: "FastAPI, REST APIs, WebSockets",
+      tech: "Spring Boot 3, Spring Security, Spring Data JPA, Hibernate, REST APIs, JWT, WebSockets",
       icon: <Server size={24} />
     },
     {
+      name: "Frontend Engineering",
+      tech: "React, Vite, TypeScript, Tailwind CSS",
+      icon: <Monitor size={24} />
+    },
+    {
       name: "Databases",
-      tech: "PostgreSQL, MySQL, MongoDB, Supabase",
+      tech: "MySQL, PostgreSQL, MongoDB, Supabase",
       icon: <Database size={24} />
     },
     {
-      name: "AI & Machine Learning",
-      tech: "Scikit-learn, Pandas, NumPy",
-      icon: <Layers size={24} />
-    },
-    {
-      name: "Developer Tools",
-      tech: "Git, GitHub, Docker, Postman",
+      name: "Developer Tools & DevOps",
+      tech: "Git, GitHub, Docker, Docker Compose, Maven, Swagger / OpenAPI, Postman",
       icon: <Wrench size={24} />
     },
     {
       name: "Core Fundamentals",
-      tech: "Data Structures & Algorithms, OOP, DBMS, Operating Systems",
-      icon: <Code size={24} />
+      tech: "Data Structures & Algorithms, OOP, DBMS, Operating Systems, Computer Networks",
+      icon: <Layers size={24} />
     }
   ],
 
@@ -93,11 +94,31 @@ const RESUME_DATA = {
       role: "Freelance Web Developer",
       period: "2024 - Present",
       desc:
-        "Developed and deployed 4+ web applications, handling requirements, feature implementation, API integrations, testing, debugging, version control, and production deployment."
+        "Developed and deployed 4+ web applications end to end — requirement gathering, feature implementation, API integration, testing, debugging, version control, and production deployment."
     }
   ],
 
   projects: [
+    {
+      title: "Placement Management System",
+      tech: [
+        "Java",
+        "Spring Boot 3",
+        "Spring Security",
+        "Spring Data JPA",
+        "React",
+        "MySQL",
+        "JWT",
+        "Docker",
+        "Swagger"
+      ],
+      desc:
+        "Full-stack placement platform with a Spring Boot 3 backend and React frontend. Implements JWT access and refresh token authentication, role-based authorization for Admin and Student, Spring Data JPA persistence over MySQL, Swagger-documented APIs, request rate limiting, and Docker Compose orchestration.",
+      highlight: "Deployed to Production",
+      link: "https://github.com/rameshkumark24/placement_system",
+      live: "https://placement-system-five.vercel.app"
+    },
+
     {
       title: "NexOps — Industrial Predictive Maintenance Platform",
       tech: [
@@ -110,7 +131,7 @@ const RESUME_DATA = {
         "Scikit-learn"
       ],
       desc:
-        "Real-time Industrial IoT platform that processes MQTT telemetry, detects machine anomalies, calculates predictive risk scores, and streams live operational data through a FastAPI backend.",
+        "Real-time Industrial IoT platform that ingests MQTT telemetry, detects machine anomalies, calculates predictive risk scores, and streams live operational data to clients over WebSockets.",
       highlight: "Top 6 Finalist — ABB Accelerator 2026",
       link: "https://github.com/rameshkumark24/abb-nexops"
     },
@@ -119,8 +140,17 @@ const RESUME_DATA = {
       title: "DSAPath — DSA Preparation Platform",
       tech: ["React", "TypeScript", "Supabase", "PostgreSQL"],
       desc:
-        "Full-stack preparation platform for organizing DSA roadmaps, tracking topic-wise progress, managing revision workflows, and maintaining job applications.",
-      link: "https://github.com/rameshkumark24/dsapath"
+        "Full-stack preparation platform for organizing DSA roadmaps, tracking topic-wise progress, managing revision workflows, and maintaining job applications with per-user authenticated data access.",
+      link: "https://github.com/rameshkumark24/dsapath",
+      live: "https://dsapathvictory.vercel.app"
+    },
+
+    {
+      title: "Smart Civic Reporting Platform",
+      tech: ["Node.js", "Express", "MongoDB"],
+      desc:
+        "Citizen-focused issue reporting platform with structured complaint tracking and workflow-based service routing, developed for Smart India Hackathon 2025.",
+      link: "https://github.com/rameshkumark24/Civic-Sense-SIH"
     },
 
     {
@@ -133,25 +163,11 @@ const RESUME_DATA = {
         "Streamlit"
       ],
       desc:
-        "End-to-end machine learning system for processing retail sales data, engineering predictive features, analyzing historical patterns, and generating forecasting insights.",
+        "End-to-end machine learning system for processing retail sales data, engineering predictive features, analyzing historical patterns, and generating forecasting insights across 50+ stores.",
       link:
-        "https://github.com/rameshkumark24/Sales-Forecasting-System"
-    },
-
-    {
-      title: "Placement Management System",
-      tech: ["Java", "Spring Boot", "React", "MySQL", "JWT"],
-      desc:
-        "Full-stack placement management platform featuring authentication, role-based access control, application tracking, and REST API-driven workflows.",
-      link: "https://github.com/rameshkumark24/placement_system"
-    },
-
-    {
-      title: "Smart Civic Reporting Platform",
-      tech: ["Node.js", "Express", "MongoDB"],
-      desc:
-        "Citizen-focused issue reporting platform with structured complaint tracking and workflow-based service routing, developed for Smart India Hackathon.",
-      link: "https://github.com/rameshkumark24/Civic-Sense-SIH"
+        "https://github.com/rameshkumark24/Sales-Forecasting-System",
+      live:
+        "https://sales-forecasting-system-vxjnd4c5q699jzvoqvzapppp.streamlit.app"
     },
 
     {
@@ -183,13 +199,13 @@ const RESUME_DATA = {
     "Top 15 Team — Hushh AI 24-Hour Hackathon, building an AI-assisted placement platform.",
     "Selected among the Top 45 institutional teams for Smart India Hackathon 2025 and qualified for national submission.",
     "Finalist — Flinders University AI Competition for AI-driven solution design and problem-solving.",
-    "Solved 200+ Data Structures and Algorithms problems across arrays, hashing, trees, dynamic programming, and graphs.",
+    "Solved 200+ Data Structures and Algorithms problems in Java across arrays, hashing, trees, dynamic programming, and graphs.",
     "Recognized as a Hushh Community Champion for active open-source contributions."
   ],
 
   certifications: [
-    "HackerRank — Problem Solving (Intermediate)",
     "IIT Bombay — Java Training (92.5%)",
+    "HackerRank — Problem Solving (Intermediate)",
     "HackerRank — SQL (Basic)",
     "IBM Cognitive Class — Deep Learning with TensorFlow",
     "AWS Skill Builder — Foundations of Prompt Engineering",
@@ -240,18 +256,18 @@ const App = () => {
     };
 
     setMetaTag('description', RESUME_DATA.tagline);
-setMetaTag(
-  'keywords',
-  'Rameshkumar Kannan, Software Engineer, Python Developer, Python Backend Developer, Backend Engineer, FastAPI Developer, REST API Developer, Java, Data Structures and Algorithms, DSA, PostgreSQL, Docker, AI ML Engineer, Software Engineer India'
-);
+    setMetaTag(
+      'keywords',
+      'Rameshkumar Kannan, Software Development Engineer, SDE, Java Developer, Spring Boot Developer, Backend Engineer, Full Stack Developer, REST API Developer, Spring Security, JWT, React Developer, Data Structures and Algorithms, DSA, MySQL, PostgreSQL, Docker, Software Engineer India, SDE Fresher 2027'
+    );
     setMetaTag('author', RESUME_DATA.name);
 
     setMetaTag('og:title', `${RESUME_DATA.name} - ${RESUME_DATA.role}`, 'property');
-setMetaTag(
-  'og:description',
-  'Software engineering portfolio of Rameshkumar Kannan, showcasing Python backend development, FastAPI, real-time systems, DSA, open-source contributions, and AI/ML projects.',
-  'property'
-);
+    setMetaTag(
+      'og:description',
+      'Software engineering portfolio of Rameshkumar Kannan, showcasing Java and Spring Boot backend development, full-stack React applications, REST API design, DSA, open-source contributions, and AI/ML projects.',
+      'property'
+    );
     setMetaTag('og:image', RESUME_DATA.profileImage, 'property');
     setMetaTag('og:url', "https://rameshkumark.com", 'property');
     setMetaTag('og:type', 'website', 'property');
@@ -578,37 +594,42 @@ setMetaTag(
           <h2 className="text-3xl md:text-4xl font-bold" style={{ fontFamily: 'var(--font-heading)' }}>
             About <span style={{ color: 'var(--accent-primary)' }}>Me</span>
           </h2>
-<p className="text-lg leading-relaxed text-custom-secondary">
-  I am a Computer Science Engineering (AI & ML) undergraduate at KPR
-  Institute of Engineering and Technology, focused on software engineering
-  and Python backend development.
-</p>
 
-<p className="text-lg leading-relaxed text-custom-secondary">
-  I build backend and data-driven applications using Python, FastAPI,
-  REST APIs, and databases. I use Java to strengthen my Data Structures,
-  Algorithms, and Object-Oriented Programming fundamentals, with 200+
-  problems solved across core problem-solving patterns.
-</p>
+          <p className="text-lg leading-relaxed text-custom-secondary">
+            I am a Computer Science Engineering (AI & ML) undergraduate at KPR
+            Institute of Engineering and Technology, focused on backend and
+            full-stack software engineering.
+          </p>
 
-<p className="text-lg leading-relaxed text-custom-secondary">
-  My AI & ML background helps me build software that combines reliable
-  engineering with intelligent capabilities. I actively participate in
-  hackathons and open-source development, including leading NexOps to the
-  Top 6 at ABB Accelerator 2026.
-</p>
+          <p className="text-lg leading-relaxed text-custom-secondary">
+            I build production-oriented applications with Java and Spring Boot —
+            REST APIs secured with Spring Security and JWT, relational data
+            modelling with Spring Data JPA, and containerised deployment with
+            Docker. On the frontend I work with React and TypeScript. Java is
+            also my problem-solving language, with 200+ Data Structures and
+            Algorithms problems solved.
+          </p>
+
+          <p className="text-lg leading-relaxed text-custom-secondary">
+            My AI & ML specialisation gives me additional range in data-driven
+            systems. I actively participate in hackathons and open-source
+            development, including leading NexOps to the Top 6 at ABB
+            Accelerator 2026 among 1,600+ teams.
+          </p>
         </div>
-        <div className="mt-10 p-6 rounded-xl border border-custom bg-custom-secondary">
+
+        <div className="max-w-4xl mx-auto mt-10 p-6 rounded-xl border border-custom bg-custom-secondary">
           <h3 className="text-xl font-bold mb-4">
             Currently Building & Learning
           </h3>
         
           <p className="text-custom-secondary">
-            Deepening my backend engineering skills through advanced Python,
-            FastAPI, PostgreSQL, API design, testing, Redis, Docker, CI/CD,
-            system design, and production-oriented backend projects.
+            Deepening backend engineering through advanced Java, the Spring
+            ecosystem, JPA and query optimisation, PostgreSQL, Redis, testing
+            with JUnit and Testcontainers, Docker, CI/CD, and system design —
+            alongside daily DSA practice and core CS fundamentals.
           </p>
-</div>
+        </div>
       </section>
 
       
@@ -649,33 +670,41 @@ setMetaTag(
             {RESUME_DATA.projects.map((project, idx) => (
               <div 
                 key={idx}
-                className="group rounded-2xl overflow-hidden border transition-all duration-300 hover:shadow-2xl hover:scale-[1.02] border-custom bg-custom-secondary hover:border-[var(--accent-primary)]"
+                className="group rounded-2xl overflow-hidden border transition-all duration-300 hover:shadow-2xl hover:scale-[1.02] border-custom bg-custom-secondary hover:border-[var(--accent-primary)] flex flex-col"
                 onMouseEnter={() => setIsHovering(true)}
                 onMouseLeave={() => setIsHovering(false)}
               >
-                <div className="p-8 space-y-4">
-                  <div className="flex justify-between items-start">
+                <div className="p-8 space-y-4 flex flex-col flex-1">
+                  <div className="flex justify-between items-start gap-3">
                     <h3 className="text-xl font-bold transition-colors group-hover:text-[var(--accent-primary)]" style={{ fontFamily: 'var(--font-heading)' }}>{project.title}</h3>
-                    <a href={project.link} target="_blank" rel="noreferrer" className="text-custom-secondary hover:text-[var(--accent-primary)]">
-                      <ExternalLink size={20} />
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label={`${project.title} source code on GitHub`}
+                      className="shrink-0 text-custom-secondary hover:text-[var(--accent-primary)]"
+                    >
+                      <Github size={20} />
                     </a>
                   </div>
-{project.highlight && (
-  <div
-    className="inline-flex px-3 py-1 text-xs font-semibold rounded-full"
-    style={{
-      backgroundColor: 'rgba(47, 128, 237, 0.1)',
-      color: 'var(--accent-primary)'
-    }}
-  >
-    🏆 {project.highlight}
-  </div>
-)}
 
-<p className="text-sm leading-relaxed text-custom-secondary">
-  {project.desc}
-</p>
-                  <div className="flex flex-wrap gap-2 pt-4">
+                  {project.highlight && (
+                    <div
+                      className="inline-flex px-3 py-1 text-xs font-semibold rounded-full self-start"
+                      style={{
+                        backgroundColor: 'rgba(47, 128, 237, 0.1)',
+                        color: 'var(--accent-primary)'
+                      }}
+                    >
+                      🏆 {project.highlight}
+                    </div>
+                  )}
+
+                  <p className="text-sm leading-relaxed text-custom-secondary">
+                    {project.desc}
+                  </p>
+
+                  <div className="flex flex-wrap gap-2 pt-2">
                     {project.tech.map((t, i) => (
                       <span 
                         key={i} 
@@ -688,6 +717,30 @@ setMetaTag(
                         {t}
                       </span>
                     ))}
+                  </div>
+
+                  <div className="flex flex-wrap gap-4 pt-4 mt-auto">
+                    {project.live && (
+                      <a
+                        href={project.live}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex items-center gap-2 text-sm font-semibold"
+                        style={{ color: 'var(--accent-primary)' }}
+                      >
+                        <ExternalLink size={16} />
+                        Live Demo
+                      </a>
+                    )}
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-2 text-sm font-semibold text-custom-secondary hover:text-[var(--accent-primary)]"
+                    >
+                      <Code size={16} />
+                      Source Code
+                    </a>
                   </div>
                 </div>
               </div>
@@ -894,10 +947,10 @@ setMetaTag(
              Let's Work <span style={{ color: 'var(--accent-primary)' }}>Together</span>
            </h2>
            <p className="text-xl mb-12 text-custom-secondary">
-  I'm open to Software Engineering, SDE Intern, and Python Backend
-  opportunities where I can contribute, learn, and build reliable
-  software systems.
-</p>
+             I'm open to Software Development Engineer, Backend Engineer, and
+             Full Stack Developer roles and internships where I can contribute,
+             learn, and build reliable software systems.
+           </p>
            
            <div className="flex flex-col md:flex-row justify-center gap-6">
              <a 
