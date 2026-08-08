@@ -1,0 +1,4 @@
+# Authorised digital sellers for the StockCut Android app (com.measure.stockcut).
+# This file must stay at the ROOT of this domain — AdMob crawls
+# https://rameshkumark.vercel.app/app-ads.txt and never looks in subdirectories.
+google.com, pub-7038016776482334, DIRECT, f08c47fec0942fa0
