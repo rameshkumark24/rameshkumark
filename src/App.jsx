@@ -25,11 +25,10 @@ import {
 const RESUME_DATA = {
   name: "Rameshkumar Kannan",
 
-  role: "Software Development Engineer | Java & Spring Boot",
+  role: "Software Development Engineer | Java & Python Backend",
 
   tagline:
-    "Computer Science undergraduate building production-grade backend systems with Java, Spring Boot, and React. I design REST APIs with authentication, role-based access control, and containerised deployment, while strengthening Data Structures, Algorithms, and core computer science fundamentals in Java.",
-
+  "Computer Science undergraduate building production backend systems in Java and Python. Primary stack is Spring Boot; I also build and ship FastAPI services, alongside full-stack work with React and TypeScript. Strong foundations in Data Structures, Algorithms and core Computer Science.",
   email: "rameshkumaroff@gmail.com",
 
   profileImage:
@@ -55,8 +54,13 @@ const RESUME_DATA = {
       icon: <Code size={24} />
     },
     {
-      name: "Backend Engineering",
-      tech: "Spring Boot 3, Spring Security, Spring Data JPA, Hibernate, REST APIs, JWT, WebSockets",
+      name: "Backend — Java",
+      tech: "Spring Boot 3, Spring Security, Spring Data JPA, Hibernate, REST APIs, JWT",
+      icon: <Server size={24} />
+    },
+    {
+      name: "Backend — Python",
+      tech: "FastAPI, SQLAlchemy, Pydantic, WebSockets, MQTT, REST APIs",
       icon: <Server size={24} />
     },
     {
@@ -258,14 +262,14 @@ const App = () => {
     setMetaTag('description', RESUME_DATA.tagline);
     setMetaTag(
       'keywords',
-      'Rameshkumar Kannan, Software Development Engineer, SDE, Java Developer, Spring Boot Developer, Backend Engineer, Full Stack Developer, REST API Developer, Spring Security, JWT, React Developer, Data Structures and Algorithms, DSA, MySQL, PostgreSQL, Docker, Software Engineer India, SDE Fresher 2027'
+      'Rameshkumar Kannan, Software Development Engineer, SDE, Java Developer, Spring Boot Developer, Python Developer, FastAPI Developer, Backend Engineer, Full Stack Developer, REST API Developer, Spring Security, JWT, React Developer, DSA, MySQL, PostgreSQL, Docker, Software Engineer India, SDE Fresher 2027'
     );
     setMetaTag('author', RESUME_DATA.name);
 
     setMetaTag('og:title', `${RESUME_DATA.name} - ${RESUME_DATA.role}`, 'property');
     setMetaTag(
       'og:description',
-      'Software engineering portfolio of Rameshkumar Kannan, showcasing Java and Spring Boot backend development, full-stack React applications, REST API design, DSA, open-source contributions, and AI/ML projects.',
+      'Software engineering portfolio of Rameshkumar Kannan — Java and Spring Boot backend systems, Python and FastAPI services, full-stack React applications, REST API design, and AI/ML projects.',
       'property'
     );
     setMetaTag('og:image', RESUME_DATA.profileImage, 'property');
