@@ -116,7 +116,7 @@ Deployed on Vercel with the default Vite preset:
 
 Computer Science Engineering (AI & ML) undergraduate at KPR Institute of Engineering and Technology, focused on **backend and full-stack software engineering**.
 
-**Core stack:** Java · Spring Boot 3 · Spring Security · Spring Data JPA · Hibernate · React · TypeScript · MySQL · PostgreSQL · Docker
+**Core stack:** Java · Spring Boot 3 · Spring Security · Spring Data JPA · Hibernate · Python · FastAPI · React · TypeScript · MySQL · PostgreSQL · Docker
 
 **Selected work**
 - **[Placement Management System](https://github.com/rameshkumark24/placement_system)** — full-stack Java platform: Spring Boot 3 backend, React frontend, JWT with access + refresh tokens, role-based authorization, Swagger-documented APIs, Docker Compose, deployed to production · [Live](https://placement-system-five.vercel.app)
